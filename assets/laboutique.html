@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>OTOMOTO</title>
+    <script>
+        function hide_plus()
+        {
+            var minus = document.getElementById('minus');
+            var div_minus = document.getElementById('div_minus');
+            var plus = document.getElementById('plus');
+
+            minus.style.display = "inline";
+            div_minus.style.display = "inline";
+            plus.style.display = "none";
+        }
+
+        function hide_minus()
+        {
+            var minus = document.getElementById('minus');
+            var div_minus = document.getElementById('div_minus');
+            var plus = document.getElementById('plus');
+
+            minus.style.display = "none";
+            div_minus.style.display = "none";
+            plus.style.display = "inline";
+        }
+
+        function hide_plus_acc()
+        {
+            var minus = document.getElementById('minus_acc');
+            var div_minus = document.getElementById('div_minus_acc');
+            var plus = document.getElementById('plus_acc');
+
+            minus.style.display = "inline";
+            div_minus.style.display = "inline";
+            plus.style.display = "none";
+        }
+
+        function hide_minus_acc()
+        {
+            var minus = document.getElementById('minus_acc');
+            var div_minus = document.getElementById('div_minus_acc');
+            var plus = document.getElementById('plus_acc');
+
+            minus.style.display = "none";
+            div_minus.style.display = "none";
+            plus.style.display = "inline";
+        }
+    </script>
+</head>
+<body>
+    <!--navbar-->
+    <div class="nav">
+        <ul id="menu">
+            <li class="dropdown mr">
+                <a  class="dropbtn"><img src="img/2.jpg" width="16" height="11"> Francais <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><img src="img/2.jpg" width="16" height="11"> Francais</a>
+                    <a href="#"><img src="img/1.jpg" width="16" height="11"> Anglais</a>
+                    <a href="#"><img src="img/3.jpg" width="16" height="11"> Espagnol</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a  class="dropbtn">EUR € <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">EUR €</a>
+                    <a href="#">MAD</a>
+                    <a href="#">USD $</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a  class="dropbtn">Mon compte <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Mon compte</a>
+                    <a href="#">Commander</a>
+                    <a href="#">Connexion</a>
+                </div>
+            </li>
+    
+            <li>E-Mail : info@otomoto-adv.com</li>
+            <li>Phone : +212 524 356 988</li>
+        </ul>
+    
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="header_logo">
+                        <a href="index.html">
+                            <img src="img/Empty.png" class="logo">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <ul class="menu">
+                            <li>
+                                <a href="">
+                                    <div class="cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>My Cart</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="laboutique.html">CONTACT</a></li>
+                            <li><a href="laboutique.html">NOS VOYAGES</a></li>
+                            <li><a href="laboutique.html">NOS MOTOS</a></li>
+                            <li><a href="laboutique.html">LA BOUTIQUE</a></li>
+                            <li><a href="laboutique.html">À PROPOS D'OTOMOTO</a></li>
+                            <li><a href="index.html">ACCUEIL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
+                    <ul>
+                        <li>
+                            <strong class="text-light">BOUTIQUE</strong>
+                        </li>
+                        <li>
+                            <span id="txt_left">EQUIPEMENT PILOTE</span>
+                            <span id="txt_right">
+                                <i class="fas fa-plus-circle" id="plus" onclick="hide_plus()"></i>
+                                <i class="fas fa-minus-circle" id="minus" onclick="hide_minus()"></i>
+                            </span>
+                            <div class="collapse" id="div_minus">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <span id="txt_left">CASQUES</span>
+                                            <span id="txt_right">
+                                                <div id="circle">&gt;</div>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span id="txt_left">GANTS</span>
+                                            <span id="txt_right">
+                                                <div id="circle">&gt;</div>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span id="txt_left">BOTTES ET CHAUSSURES</span>
+                                            <span id="txt_right">
+                                                <div id="circle">&gt;</div>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span id="txt_left">VESTE</span>
+                                            <span id="txt_right">
+                                                <div id="circle">&gt;</div>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span id="txt_left">MASQUES & LUNETTES</span>
+                                            <span id="txt_right">
+                                                <div id="circle">&gt;</div>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span id="txt_left">PANTALON</span>
+                                            <span id="txt_right">
+                                                <div id="circle">&gt;</div>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span id="txt_left">ACCESSOIRES</span>
+                            <span id="txt_right">
+                                <i class="fas fa-plus-circle" id="plus_acc" onclick="hide_plus_acc()"></i>
+                                <i class="fas fa-minus-circle" id="minus_acc" onclick="hide_minus_acc()"></i>
+                            </span>
+                            <div class="collapse" id="div_minus_acc">
+                                <ul>
+                                    <li><a href="">PNEUS</a></li>
+                                    <li><a href="">SYSTÈMES DE COMMUNICATION</a></li>
+                                    <li><a href="">AUTRES</a></li>
+                                    <li>
+                                        <a href="">
+                                            <span id="txt_left">LUBRIFIANT ET NETTOYANTS</span>
+                                            <span id="txt_right">
+                                                <div id="circle">&gt;</div>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="vendors/bootstrap/js/jQuery.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

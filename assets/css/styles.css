@@ -1,0 +1,137 @@
+
+body{
+    background-color: black;
+    background-image: url('../img/bg.jpg');
+    background-size: contain;
+    background-position: 0 -80px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+/*bar_top*/
+#menu{ 
+    background-color: rgba(7, 7, 7, 0.5); 
+    height: 40px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+#menu li{
+    display: inline;
+    padding: 12px ;
+    color: white;
+    float: right;
+}
+.mr{margin-right: 110px;}
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*header top*/
+.header-top {
+    padding: 0 !important;
+}
+.header_logo{
+    background-image: url('../img/logo.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    display: block;
+    height: 110px;
+    width: 150px;
+    left: 0;
+    margin-top: -44px;
+    position: relative;
+    top: 0;
+    z-index: 100000;
+}
+.logo
+{
+    width: 120px;
+    height: 110px;
+    top: 0;
+    left: 0;
+    position: relative;
+    top: 0;
+}
+.container {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+}
+.row.col {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    padding: 0;
+}
+.menu{
+    font-size: 110%;
+    font-weight: normal;
+}
+.menu li{
+    display: inline;
+    padding: 15px ;
+    float: right;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.menu li a:hover{color: #f26227;}
+/*end navbar*/
+.row {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    padding: 0;
+}
+/*content*/
+#minus,#div_minus{display: none;}
+#minus_acc,#div_minus_acc{display: none;}
+#txt_left{text-align: left;}
+#txt_right{text-align: right;float: right;}
+#circle{
+    color: white;
+    background-color: #f26227;
+    border-radius: 25px;
+    width: 15px;
+    text-align: center;
+}
+ul li{text-decoration: none;}
+ul li a{
+    text-decoration: none;
+    color: white;
+}

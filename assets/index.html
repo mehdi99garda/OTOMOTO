@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/styles.css">-->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>OTOMOTO Marrakech</title>
+    <style>
+        .hover:hover{background-color: orangered;}
+        body
+        {
+            background-color: black;
+            background-image: url('img/bg.jpg');
+            background-position: 0 -80px;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-size: contain;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+        }
+        .bg-black{background-color: black;}
+
+        h3.hometitle {
+            color: #ffffff;
+            font-size: 400%;
+            font-weight: 700;
+            line-height: 110%;
+            margin-top: 100px;
+            text-transform: uppercase;
+            font-family: 'Lato', sans-serif;
+        }
+
+        #formrdv {
+            border: 2px solid #fe3b00;
+            box-shadow: 1px 1px 6px #fe3b00;
+            margin-bottom: 50px;
+            float: right;
+            padding: 20px;
+            width: 90%;
+            border-radius: 10px;
+        }
+        .fb{
+            font-weight: bold; 
+            color: orangered;
+            display: block;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        a.fb:hover{color: rgb(163, 44, 0);text-decoration: none;}
+        .w-90{width: 90%;}
+        /*css navbar*/
+        #menu{ 
+            background-color: rgba(7, 7, 7, 0.5);
+            height: 40px;
+            font-size: 12px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #menu li{
+            display: inline;
+            padding: 12px ;
+            color: white;
+            float: right;
+        }
+        .mr{margin-right: 110px;}
+        .dropbtn {
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .header-top {
+            padding: 0 !important;
+        }
+        .header_logo{
+            background-image: url('img/logo.png');
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: auto 90%;
+            display: block;
+            height: 110px;
+            width: 150px;
+            left: 0;
+            margin-top: -44px;
+            position: relative;
+            top: 0;
+            z-index: 100000;
+        }
+        .logo
+        {
+            width: 120px;
+            height: 110px;
+            top: 0;
+            left: 0;
+            position: relative;
+            top: 0;
+        }
+        .container {
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 1170px;
+        }
+        .row.col {
+            display: table-cell;
+            vertical-align: middle;
+            float: none;
+            padding: 0;
+        }
+        .menu{
+            font-size: 110%;
+            font-weight: normal;
+        }
+        .menu li{
+            display: inline;
+            padding: 15px ;
+            float: right;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        .menu li a:hover{color: #f26227;}
+        /*end css navbar*/
+        .max-width{max-width: 1170px;}
+        .para1{
+            padding-top: 40px;
+        }
+        .txt{
+            color: #ffffff;
+            font-size: 110%;
+            line-height: 200%;
+            margin-top: 30px;
+        }
+        /*css footer*/
+        #footer{
+            color: white;
+            padding-bottom: 20px;
+        }
+        .designedby {
+            line-height: 30px;
+            text-align: left;
+        }
+        strong{font-weight: bolder;}
+        .designedby a {
+            color: #e3e3e3;
+            font-weight: bold;
+        }
+        #footer .infoadresseftr {
+            line-height: 20px;
+            text-align: left;
+        }
+        .ft_newsletter {
+            margin: 0;
+            padding: 0;
+            position: static;
+            text-align: left;
+        }
+        .ft_newsletter form .input-wrapper {
+            float: left;
+            width: 80%;
+        }
+        .ft_newsletter {
+            margin: 0;
+            padding: 0;
+            position: static;
+            text-align: left;
+            position: relative;
+        }
+        .inputstyle{
+            background-color: rgba(0, 0, 0, 0) !important;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            color: #ffffff !important;
+            height: 30px;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+        .ft_newsletter form input.btn-primary {
+            background-color: rgba(0, 0, 0, 0) !important;
+            border-bottom: 1px solid #ffffff !important;
+            color: #fe3b00 !important;
+            float: left;
+            font-size: 80%;
+            height: 30px;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+            position: static;
+        }
+        .ft_newsletter form .btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 50px;
+            background: #212121;
+            border: 0;
+            color: white;
+            padding: 0 30px;
+            font-size: 18px;
+            font-weight: 900;
+            display: inline-block;
+            vertical-align: top;
+            line-height: 50px;
+            box-shadow: none;
+            text-transform: capitalize;
+        }
+        .btn{border-radius: 0;}
+        .formok{display: inline-block;}
+        .tdsocial{
+            width: 50%;
+            font-size: 20px;
+            text-align: center;
+            padding-right: 50px;
+            color: #f26227;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+    <ul id="menu">
+        <li class="dropdown mr">
+            <a  class="dropbtn"><img src="img/2.jpg" width="16" height="11"> Francais <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#"><img src="img/2.jpg" width="16" height="11"> Francais</a>
+                <a href="#"><img src="img/1.jpg" width="16" height="11"> Anglais</a>
+                <a href="#"><img src="img/3.jpg" width="16" height="11"> Espagnol</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a  class="dropbtn">EUR € <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">EUR €</a>
+                <a href="#">MAD</a>
+                <a href="#">USD $</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a  class="dropbtn">Mon compte <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Mon compte</a>
+                <a href="#">Commander</a>
+                <a href="#">Connexion</a>
+            </div>
+        </li>
+
+        <li>E-Mail : info@otomoto-adv.com</li>
+        <li>Phone : +212 524 356 988</li>
+    </ul>
+
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="header_logo">
+                    <a href="index.html">
+                        <img src="img/Empty.png" class="logo">
+                    </a>
+                </div>
+                <div class="col">
+                    <ul class="menu">
+                        <li>
+                            <a href="">
+                                <div class="cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>My Cart</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="laboutique.html">CONTACT</a></li>
+                        <li><a href="laboutique.html">NOS VOYAGES</a></li>
+                        <li><a href="laboutique.html">NOS MOTOS</a></li>
+                        <li><a href="laboutique.html">LA BOUTIQUE</a></li>
+                        <li><a href="laboutique.html">À PROPOS D'OTOMOTO</a></li>
+                        <li><a href="laboutique.html">ACCUEIL</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="row container pb-5 pt-3">
+        <div class="col-xs-12 col-sm-6 para1">
+            <h3 class="hometitle">TOUT L'UNIVERS<br>MOTO À PRIX MALIN!</h3>
+            <p class="txt">Otomoto c’est une équipe de passionnés et d'experts de la moto (Scooter, Cross, GT, Custom, Off-road, Sport). Nous veillons au quotidien à vous offrir l'équipement le plus adapté à votre moto, à votre besoin et à votre morphologie.</p>
+            <a href="#" class="pb-3 fb"><h6>EN SAVOIR PLUS ></h6></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 mt-3 mx-auto"  id="formrdv">
+            <iframe src="form_rdv.html" frameborder="0" width="100%" height="490px"></iframe>
+        </div>
+    </div>
+    <!--footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="copy">
+                        <strong>© OTOMOTO</strong> 2018. All rights reserved. <br>
+                        <div class="designedby">Designed By <a href="https://www.sggi-maroc.com/" title="Société Générale de Gestion Informatique" target="_blanc">SGGI</a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 infoadresseftr">
+                    <div class="adresse">933 Route de Safi - N°4, Marrakech</div>
+                    <div class="adresse">Téléphone: 0524 356 988</div>
+                    <div class="adresse">info@otomoto-adv.com</div>
+                </div>
+
+                <div class="ft_newsletter col-md-3">
+                    <h5>NEWSLETTER</h5>
+                    <form action="" class="formok">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="input-wraper">
+                                        <input name="email" type="text" class="inputstyle" placeholder="E-MAIL">
+                                    </div>
+                                </td>
+                                <td>
+                                    <input class="btn btn-primary hidden-xs-down" name="submitNewsletter" type="submit" value="OK">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="col-md-3 socialftr">
+                    <div class="socialright">
+                        <h5>SUIVEZ NOUS SUR</h5>
+                        <div class="social_follow">
+                            <table>
+                                <tr>
+                                    <td class="tdsocial"><i class="fab fa-facebook-f"></i></td>
+                                    <td class="tdsocial"><i class="fab fa-instagram"></i></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="vendors/bootstrap/js/jQuery.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    
+    </body>
+    </html>
